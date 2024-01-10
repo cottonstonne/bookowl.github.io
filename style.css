@@ -1,0 +1,261 @@
+body{
+    background: #272727;
+}
+.zind{
+	top:0px;
+	left:0px;
+    width: 100%;
+	position:absolute;
+	z-index:-2;
+}
+/* first segment css*/
+
+.topbar{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+}
+.f0{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap:5rem;
+}
+.f1{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	gap:5rem;
+	align-items: center;
+}
+.login{
+	font-size:120%;
+	background-color:transparent;
+	border:none;
+	color:white;
+	letter-spacing:3px;
+}
+.login:hover{
+	text-shadow:2px 2px #FFE4B5;
+	padding:5px 11px;
+	transition:0.2s;
+}
+.f0>p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFDE91;
+	justify-self: start;
+}
+select,.get{
+	color:white;
+	background:transparent;
+	border-radius:20px;
+	border-color:#8A2BE2;
+	padding:8px;
+	letter-spacing:2px;
+}
+.get{
+    background:gold;
+	color:black;
+}
+select:hover,.get:hover{
+	background-color:gold;
+	color:black;
+	border:2px solid black;
+	padding:10px;
+	transition:0.4s;
+
+}
+#input-search{
+	background-color:#E6E6FA;
+	border-radius:20px;
+	padding:5px;
+	border:black;
+	width:20vw;
+}
+#search{
+	font-size:120%;
+	background-color:gold;
+	color:black;
+	letter-spacing:3px;
+	border:2px solid black;
+	border-radius:10px;
+	padding:4px 10px;
+}
+#search:hover{
+	text-shadow:4px 4px #FFE4B5;
+	padding:5px 11px;
+	transition:0.2s;
+}
+.typesc{
+	display: flex;
+	margin-left: 35%;
+}
+.typesc p{
+	color:#696969 ;
+	font-size: 5rem;
+}
+.auto {
+}
+
+/*bubbles*/
+.bubble,.cover,.cover1{
+	position:fixed;
+	bottom:-60vh;
+	z-index: -1;
+}
+.bubbleu,.bubbled,.bubblea1,.bubblea2,.bubbleb1,.bubbleb2{
+	display:flex;
+	justify-content:space-between;
+}
+.bimg{
+	display:block;
+	width:15%;
+	animation:bob 40s infinite;
+}
+.bubbleu img:nth-child(1){
+}
+.bubbleu img:nth-child(2){
+	animation-delay:5s;
+}
+.bubbled img:nth-child(1){
+	animation-delay:10s;
+	margin-left:5%;
+}
+.bubbled img:nth-child(2){
+	animation-delay:20s;
+	margin-right:3%;
+}
+/*carry css*/
+.cover img{
+	width:10%;
+	animation:bob 40s infinite;
+}
+.cover1 img{
+	width:5%;
+	animation:bob 40s infinite;
+}
+.bubblea1 img:nth-child(1){
+	animation-delay:2s;
+}
+.bubblea1 img:nth-child(2){
+	animation-delay:7s;
+}
+.bubblea2 img:nth-child(1){
+	animation-delay:14s;
+}
+.bubblea2 img:nth-child(2){
+	animation-delay:10s;
+}
+.bubbleb1 img:nth-child(1){
+	animation-delay:3s;
+	margin-left:5%;
+}
+.bubbleb1 img:nth-child(2){
+	animation-delay:6s;
+	margin-left:5%;
+}
+.bubbleb2 img:nth-child(1){
+	animation-delay:5s;
+	margin-right:3%;
+}
+.bubbleb2 img:nth-child(2){
+	animation-delay:12s;
+	margin-right:3%;
+}
+@keyframes bob{
+	0%{
+		transform:translateY(0);
+		opacity:0;
+	}
+	25%{
+		opacity:1;
+	}
+	50%{
+		opacity:1;
+	}
+	75%{
+		opacity:1;
+	}
+	100%{
+		transform:translateY(-120vh);
+		opacity:0;
+	}
+}
+/*genre selector*/
+#outer{
+	display:flex;
+	justify-content:center;
+	margin:40px;
+}
+.sick{
+        border:none;
+        background:none;
+        padding:0;
+}
+/*third segment css*/
+.cardcnt{
+	display: flex;
+	justify-content: center;
+	gap:2rem;
+}
+.inner-block{
+	width: 20vw;
+	height: 25vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	background-color:#ffd700;
+
+}
+.inner-block:hover{
+	transform:scale(1.03);
+	box-shadow:0px 0px 3px 5px #FFDE91;
+}
+.inner-block-head{
+	font-family:cursive;
+}
+.inner-block-p{
+	font-size:170%;
+	font-family:cursive;
+}
+.mbtn{
+       border-radius:10px; 
+       padding:2px 5px;
+       background:transparent;
+       border:1px dotted black;
+}
+.mbtn:hover{
+       border-radius:10px; 
+       padding:2px 5px;
+       background:transparent;
+       border:1px solid black;
+}
+/*top css*/
+.ttitle{
+	font-size:500%;
+	color:white;
+	text-align:center;
+}
+.book{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0% 10%;
+}
+.book img{
+	height:40vh;
+	filter: grayscale(1);
+}
+.timg:hover{
+	filter: grayscale(0);
+	box-shadow:0 0 6px 2px gold;
+}
+.thold{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
